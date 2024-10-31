@@ -1,7 +1,6 @@
 import random
 import numpy as np
 
-
 Right = [[2, 18, 23, 7],[3, 10, 22, 15],[6, 14, 19, 11],[26, 37, 46, 35],[30, 34, 42, 38]]
 Left = [[32, 36, 44, 40], [9, 8, 16, 17], [1, 12, 24, 13],[4, 20, 21, 5], [28, 39, 48, 33]]
 Up = [[1, 2, 3, 4], [25, 26, 27, 28], [5, 6, 7, 8],[29, 30, 31, 32], [9, 10, 11, 12]]
@@ -29,8 +28,6 @@ def apply(move,cube):
 Recibe una cadena que contiene movimientos del cubo
 y una posición del cubo, y ejecuta esos movimientos en el cubo.
 Una letra mayúscula es una rotación de la cara en el sentido de las agujas del reloj y una letra minúscula es una rotación de la cara en el sentido contrario a las agujas del reloj
-
-
 """
 def execute(moves,cube):
     s = ""
@@ -433,8 +430,6 @@ def testall(n):
 
 
 if __name__ == '__main__':
-
-
     cube = list(range(49))
     scramble(cube)
     print("\nCubo mezclado:\n {}".format(cube))
